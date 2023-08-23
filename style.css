@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    background-image: url(https://1000logos.net/wp-content/uploads/2023/05/Laughing-Emoji.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+.maincontainer {
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+}
+
+.question {
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+    background-color: rgba(0, 23, 128, 0.363);
+}
+
+h2 {
+    color: rebeccapurple;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.question-text {
+    /* border: 1px solid saddlebrown; */
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 43, 43);
+
+}
+
+
+.answer {
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 40%;
+    height: 30%;
+    padding: 20px;
+    background-color: rgba(0, 23, 128, 0.363);
+}
+
+button {
+    height: 40px;
+    width: 130px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:hover {
+    background-color: rgb(0, 255, 157);
+}
+
+.button-and-error {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+@media only screen and (max-width:500px) {
+
+    body {
+        background-image: url(https://media.tenor.com/DgKXwIKpNbkAAAAC/laughing-emoji.gif);
+        background-position: center;
+    }
+
+    .question { 
+        width: 85%;
+        height: 40%;
+    }
+
+    .answer {
+        width: 85%;
+        height: 30%;
+        padding: 20px;
+        background-color: rgba(0, 23, 128, 0.363);
+    }
+
+
+}
